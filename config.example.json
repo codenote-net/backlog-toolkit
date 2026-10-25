@@ -1,0 +1,17 @@
+{
+  "origins": [
+    "https://your-space.backlog.com"
+  ],
+  "uploadPaths": [
+    "/api/v2/space/attachment",
+    "/AddAttachmentAsync.action",
+    "/r/files/addSharedFile",
+    "/AddWikiAttachmentAsync.action"
+  ],
+  "uploadSelectors": [
+    ".js_uploadBtn",
+    "#attachFileButton",
+    "#addAttachmentLink",
+    "#addFileLink"
+  ]
+}

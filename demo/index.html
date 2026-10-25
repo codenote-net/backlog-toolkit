@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Backlog Toolkit — Local Test Lab</title>
+  <style>
+    body { max-width: 820px; margin: 48px auto; padding: 0 24px; font: 16px/1.6 system-ui; color: #172b4d; background: #f6f8fb; }
+    section { background: white; border: 1px solid #dae1ec; border-radius: 12px; padding: 24px; margin: 20px 0; }
+    button { padding: 10px 16px; margin: 6px 6px 6px 0; cursor: pointer; }
+    textarea { display: block; width: 95%; min-height: 70px; padding: 10px; }
+    #drop { border: 2px dashed #8799b6; padding: 24px; margin-top: 12px; }
+    pre { white-space: pre-wrap; overflow-wrap: anywhere; }
+  </style>
+</head>
+<body>
+  <h1>Backlog Toolkit</h1>
+  <p>Local test lab · No Backlog account required · No files are stored</p>
+  <section>
+    <h2>1. Text comments stay available</h2>
+    <label for="comment">Comment (try pasting text)</label>
+    <textarea id="comment">Hello from the local test lab.</textarea>
+    <button id="send-comment">Post demo comment</button>
+    <p id="comment-result" role="status">Not tested</p>
+  </section>
+  <section>
+    <h2>2. File controls and gestures</h2>
+    <p>With the demo extension enabled, the file input and upload button below should disappear.</p>
+    <input id="file" type="file" aria-label="Demo file upload">
+    <button data-upload-button>Choose attachment</button>
+    <button id="add-control">Add a dynamic file input</button>
+    <div id="dynamic"></div>
+    <div id="drop" tabindex="0">Drop a file or paste an image here. Text drops and pastes remain allowed.</div>
+    <p id="gesture-result" role="status">No file gesture reached the page.</p>
+  </section>
+  <section>
+    <h2>3. Network and UI checks</h2>
+    <p>The suite sends harmless dummy data to this local server. It verifies the actual request counters, not just a fetch error.</p>
+    <button id="run">Run checks</button>
+    <pre id="results" role="status">Ready</pre>
+  </section>
+  <script src="/demo.js"></script>
+</body>
+</html>

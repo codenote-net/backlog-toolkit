@@ -1,0 +1,15 @@
+{
+  "name": "backlog-toolkit",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "An unofficial browser extension for Backlog.",
+  "license": "MIT",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "build:demo": "node scripts/build.mjs --demo",
+    "demo": "node demo/server.mjs",
+    "test": "node --test"
+  }
+}
